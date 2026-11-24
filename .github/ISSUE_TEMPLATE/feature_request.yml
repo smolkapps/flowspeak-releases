@@ -1,0 +1,21 @@
+name: Feature Request
+description: Suggest an improvement, platform support request, or workflow idea for FlowSpeak
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What problem would this solve, and how should it work?
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Target Platform
+      options:
+        - All platforms
+        - macOS
+        - Linux
+        - Windows (upcoming)

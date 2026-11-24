@@ -1,0 +1,18 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Never commit build outputs or archives to the release metadata repo
+dist/
+*.dmg
+*.tar.gz
+*.zip
+*.bin
+*.gguf
+*.pem
+*.p8
+*.key
+.env
+.env.*

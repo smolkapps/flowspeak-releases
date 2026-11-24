@@ -1,0 +1,42 @@
+name: Bug Report
+description: Report a crash, dictation failure, UI issue, or platform bug in FlowSpeak
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: FlowSpeak Version
+      placeholder: "e.g. 1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - macOS (Apple Silicon arm64)
+        - macOS (Intel x86_64)
+        - Linux (x86_64)
+    validations:
+      required: true
+  - type: input
+    id: engine
+    attributes:
+      label: Speech Engine & Trigger Key
+      placeholder: "e.g. Local Whisper (ggml-base.en.bin), Hold Ctrl (Either)"
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Clear description of the bug and what you expected to happen. Never include API keys or license keys.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Hold Ctrl in ...
+        2. Speak ...
+        3. Release Ctrl
