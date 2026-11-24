@@ -3,7 +3,7 @@
 [![Website](https://img.shields.io/badge/Website-smolkapps.com%2Fflowspeak-3b4ce2)](https://smolkapps.com/flowspeak/)
 [![Latest Release](https://img.shields.io/github/v/release/smolkapps/flowspeak-releases)](https://github.com/smolkapps/flowspeak-releases/releases)
 
-Official binary releases, SHA-256 verification manifests, changelogs, and public issue tracker for **FlowSpeak** (`© 2026 Smolk Apps`) — local push-to-talk voice dictation (`Hold Ctrl`, speak, release) built in Go with in-process `whisper.cpp` and a native Liquid Glass desktop dashboard.
+Official binary releases, SHA-256 verification manifests, changelogs, and public issue tracker for **FlowSpeak** (`© 2026 Smolk Apps`), local push-to-talk voice dictation (`Hold Ctrl`, speak, release) built in Go with in-process `whisper.cpp` and a native Liquid Glass desktop dashboard.
 
 - **Website & Pricing:** [smolkapps.com/flowspeak](https://smolkapps.com/flowspeak/)
 - **Documentation & Support:** [smolkapps.com/flowspeak/support](https://smolkapps.com/flowspeak/support/)
@@ -16,7 +16,7 @@ Official binary releases, SHA-256 verification manifests, changelogs, and public
 - **Liquid Glass Interface (Default):** Translucent Liquid Glass macOS dashboard and floating recording HUD (`NSGlassEffectView` on macOS 26+ with `NSVisualEffectView` fallback back to macOS 12), plus an automatic Reduce Transparency fallback and a **Classic Solid** toggle under `Settings → Appearance`.
 - **On-Device Privacy First:** Static in-process `whisper.cpp v1.9.5` powered by Apple Silicon Metal + Accelerate, Intel `x86_64` AVX2, or Linux `x86_64`, plus optional Groq / OpenAI / custom OpenAI-compatible LAN fallback and optional Ollama cleanup.
 - **Clipboard-Preserving Paste & Zero-Fluff Cleanup:** Deterministic filler/stutter stripping, Personal Dictionary & Voice Snippets, and original clipboard restoration after auto-paste.
-- **Fair Ownership Pricing:** Free download with **25 full dictations**. Lifetime Pro is **$19** during the Black Friday launch (**Nov 24–Dec 1, 2026**, 34% off **$29** regular price — no code needed) for up to **3 personal computers** with offline Ed25519 license verification (Windows included free once released).
+- **Fair Ownership Pricing:** Free download with **25 full dictations**. Lifetime Pro is **$19** during the Black Friday launch (**Nov 24–Dec 1, 2026**, 34% off **$29** regular price, no code needed) for up to **3 personal computers** with offline Ed25519 license verification (Windows included free once released).
 
 ## Downloads
 
