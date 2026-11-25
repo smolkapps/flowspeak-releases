@@ -16,7 +16,7 @@ Official binary releases, SHA-256 verification manifests, changelogs, and public
 - **Liquid Glass Interface (Default):** Translucent Liquid Glass macOS dashboard and floating recording HUD (`NSGlassEffectView` on macOS 26+ with `NSVisualEffectView` fallback back to macOS 12), plus an automatic Reduce Transparency fallback and a **Classic Solid** toggle under `Settings → Appearance`.
 - **On-Device Privacy First:** Static in-process `whisper.cpp v1.9.5` powered by Apple Silicon Metal + Accelerate, Intel `x86_64` AVX2, or Linux `x86_64`, plus optional Groq / OpenAI / custom OpenAI-compatible LAN fallback and optional Ollama cleanup.
 - **Clipboard-Preserving Paste & Zero-Fluff Cleanup:** Deterministic filler/stutter stripping, Personal Dictionary & Voice Snippets, and original clipboard restoration after auto-paste.
-- **Fair Ownership Pricing:** Free download with **25 full dictations**. Lifetime Pro is **$19** during the Black Friday launch (**Nov 24–Dec 1, 2026**, 34% off **$29** regular price, no code needed) for up to **3 personal computers** with offline Ed25519 license verification (Windows included free once released).
+- **Fair Ownership Pricing:** Free download with **25 full dictations**. Lifetime Pro is **$19** during the Black Friday launch (**Nov 24–Dec 1, 2026**, 34% off **$29** regular price, no promo code needed) for up to **3 personal computers** with offline Ed25519 license verification (Windows included free once released).
 
 ## Downloads
 
@@ -39,7 +39,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 
 ### macOS First-Launch Gatekeeper Note
 
-Current macOS builds are Developer-signed and awaiting Apple Developer ID notarization completion. Until notarized, macOS Gatekeeper may warn on first launch from an internet download. After dragging `FlowSpeak.app` into `/Applications`, either **Right-click → Open** in Finder or clear the download quarantine attribute:
+Current macOS builds are Developer-signed and awaiting Apple Developer ID notarization completion. Until notarized, macOS Sequoia/Tahoe Gatekeeper may warn on first launch from an internet download. After dragging `FlowSpeak.app` into `/Applications`, click **Done**, then open **System Settings → Privacy & Security → Open Anyway**, or clear the download quarantine attribute:
 
 ```bash
 xattr -dr com.apple.quarantine /Applications/FlowSpeak.app
