@@ -37,12 +37,13 @@ shasum -a 256 -c SHA256SUMS.txt --ignore-missing
 sha256sum -c SHA256SUMS.txt --ignore-missing
 ```
 
-### macOS First-Launch Gatekeeper Note
+### macOS Gatekeeper Verification
 
-Current macOS builds are Developer-signed and awaiting Apple Developer ID notarization completion. Until notarized, macOS Sequoia/Tahoe Gatekeeper may warn on first launch from an internet download. After dragging `FlowSpeak.app` into `/Applications`, click **Done**, then open **System Settings → Privacy & Security → Open Anyway**, or clear the download quarantine attribute:
+Official `FlowSpeak-1.0.0-Universal.dmg` and `FlowSpeak.app` releases are signed with our Apple Developer ID certificate (`4R42A425CK`) with Hardened Runtime, notarized by Apple, and stapled, so Gatekeeper opens them directly without any quarantine workaround:
 
 ```bash
-xattr -dr com.apple.quarantine /Applications/FlowSpeak.app
+spctl -a -vvv -t open --context context:primary-signature FlowSpeak-1.0.0-Universal.dmg
+xcrun stapler validate FlowSpeak-1.0.0-Universal.dmg
 ```
 
 ### Linux Install
